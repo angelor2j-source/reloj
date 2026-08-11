@@ -6,7 +6,70 @@
   <meta charset="UTF-8">
   <TITle>Reloj analogico</TITle>
   <link> rel="stylesheet"</link>
+  <style>
+      /* Estilos del Reloj y Esfera */
+      body {
+        background-color: #1e1e2e;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: sans-serif;
+      }
 
+      .reloj {
+        width: 250px;
+        height: 250px;
+        border: 8px solid #cba6f7;
+        border-radius: 50%;
+        position: relative;
+        background: #181825;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+      }
+
+      .centro {
+        width: 14px;
+        height: 14px;
+        background-color: #cba6f7;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 10;
+      }
+
+      /* Agujas del reloj */
+      .aguja {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        transform-origin: bottom center;
+        border-radius: 4px;
+      }
+
+      #aguja-horas {
+        width: 6px;
+        height: 60px;
+        background-color: #f38ba8;
+        margin-left: -3px;
+      }
+
+      #aguja-minutos {
+        width: 4px;
+        height: 85px;
+        background-color: #89b4fa;
+        margin-left: -2px;
+      }
+
+      #aguja-segundos {
+        width: 2px;
+        height: 95px;
+        background-color: #a6e3a1;
+        margin-left: -1px;
+      }
+    </style>
 </head> 
 
 // CÓDIGO CON ERRORES INTENCIONALES
